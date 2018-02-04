@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var attendee, workshop;
+            $("#submit").click(function () {
+                attendee=$("#attendee").val();
+                workshop=$("#workshop").val();
+                $.post("http://localhost:8080/add",{attendee: attendee, workshop:workshop}, function (data) {
+                    if(data==='done'){
+                        alert("post succesul");
+                    }
+                })
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <h1>fill the form</h1>
+    <input type="text" id="attendee" size="40"><br>
+    <input type="text" id="workshop" size="40"><br>
+    <input type="button" id="submit" value="Submit">
+
+</body>
+</html>
