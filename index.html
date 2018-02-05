@@ -10,7 +10,7 @@
             $("#submit").click(function () {
                 attendee=$("#attendee").val();
                 workshop=$("#workshop").val();
-                $.post("http://localhost:8080/add",{attendee: attendee, workshop:workshop}, function (data) {
+                $.post("http://localhost:8080/api",{attendee: attendee, workshop:workshop}, function (data) {
                     if(data==='done'){
                         alert("post succesul");
                     }
