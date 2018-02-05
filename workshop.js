@@ -7,7 +7,7 @@ const app = express();
 var config ={
     host: 'localhost',
     user: 'webuser',
-    password : 'w1fUkYoUQKbT',
+    password : 'i2E1CUXs',
     database: 'workshop',
 
 }
