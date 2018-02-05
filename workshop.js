@@ -61,7 +61,11 @@ else{
 }});
 
 
+<<<<<<< HEAD
+app.post('/api', async (req,res)=> {
+=======
 app.post('/add', async (req,res)=> {
+>>>>>>> d614b279718db19ffac802fb457915d4b584e48a
     var attendee = req.body.attendee;
     var workshop = req.body.workshop;
     if (attendee ==="" || workshop===""){
